@@ -39,6 +39,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\CategoryType $PrimaryCategory
  * @property \DTS\eBaySDK\Trading\Types\ProductListingDetailsType $ProductListingDetails
  * @property integer $Quantity
+ * @property bool $PrivateListing
  * @property string $PrivateNotes
  * @property boolean $RelistLink
  * @property \DTS\eBaySDK\Trading\Types\AmountType $ReservePrice
@@ -306,6 +307,12 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Quantity'
+        ],
+        'PrivateListing' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'PrivateListing'
         ],
         'PrivateNotes' => [
             'type' => 'string',
