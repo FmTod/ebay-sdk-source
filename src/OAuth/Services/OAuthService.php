@@ -360,7 +360,7 @@ class OAuthService
             return $carry;
         }, []);
 
-        return empty($request) ? '' : http_build_query($params, null, '&', PHP_QUERY_RFC3986);
+        return empty($request) ? '' : http_build_query($params, "", '&', PHP_QUERY_RFC3986);
     }
 
     /**
