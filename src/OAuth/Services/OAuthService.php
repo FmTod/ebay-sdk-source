@@ -186,8 +186,11 @@ class OAuthService
             'response_type' => 'code',
             'state'         => $params['state'],
             'scope'         => implode(' ', $params['scope'])
-
         ];
+
+        if (isset($params['prompt'])) {
+            $urlParams['prompt'] = $params['prompt'];
+        }
 
         return $url.http_build_query($urlParams, null, '&', PHP_QUERY_RFC3986);
     }
