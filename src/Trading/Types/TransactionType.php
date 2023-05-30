@@ -73,6 +73,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $eBayPlusTransaction
  * @property \DTS\eBaySDK\Trading\Types\GiftSummaryType $GiftSummary
  * @property \DTS\eBaySDK\Trading\Types\DigitalDeliverySelectedType $DigitalDeliverySelected
+ * @property \DTS\eBaySDK\Trading\Types\TransactionProgramType $Program
  * @property boolean $Gift
  * @property boolean $GuaranteedShipping
  * @property boolean $GuaranteedDelivery
