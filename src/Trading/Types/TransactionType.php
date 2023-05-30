@@ -466,7 +466,13 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'GuaranteedDelivery'
-        ]
+        ],
+        'Program' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\TransactionProgramType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'Program'
+        ],
     ];
 
     /**
