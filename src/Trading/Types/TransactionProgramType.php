@@ -12,7 +12,7 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\TransactionProgramType $AuthenticityVerification
+ * @property \DTS\eBaySDK\Trading\Types\AuthenticityVerificationType $AuthenticityVerification
  * @property \DTS\eBaySDK\Trading\Types\FulfillmentType $Fulfillment
  */
 class TransactionProgramType extends \DTS\eBaySDK\Types\BaseType
@@ -22,7 +22,7 @@ class TransactionProgramType extends \DTS\eBaySDK\Types\BaseType
      */
     private static $propertyTypes = [
         'AuthenticityVerification' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\TransactionProgramType',
+            'type' => 'DTS\eBaySDK\Trading\Types\AuthenticityVerificationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AuthenticityVerification'
