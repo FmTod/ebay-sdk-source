@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Order\Types;
 
 use DTS\eBaySDK\Order\Types\UpdateShippingAddressRestResponse;
 
-class UpdateShippingAddressRestResponseTest extends \PHPUnit_Framework_TestCase
+class UpdateShippingAddressRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new UpdateShippingAddressRestResponse();
     }
 

@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\DigitalStatusCodeType;
 
-class DigitalStatusCodeTypeTest extends \PHPUnit_Framework_TestCase
+class DigitalStatusCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new DigitalStatusCodeType();
     }
 

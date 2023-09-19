@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\GetStoreOptionsRequestType;
 
-class GetStoreOptionsRequestTypeTest extends \PHPUnit_Framework_TestCase
+class GetStoreOptionsRequestTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new GetStoreOptionsRequestType();
     }
 

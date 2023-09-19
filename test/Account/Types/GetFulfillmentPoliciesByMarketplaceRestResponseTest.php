@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Account\Types;
 
 use DTS\eBaySDK\Account\Types\GetFulfillmentPoliciesByMarketplaceRestResponse;
 
-class GetFulfillmentPoliciesByMarketplaceRestResponseTest extends \PHPUnit_Framework_TestCase
+class GetFulfillmentPoliciesByMarketplaceRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new GetFulfillmentPoliciesByMarketplaceRestResponse();
     }
 

@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Fulfillment\Types;
 
 use DTS\eBaySDK\Fulfillment\Types\ShippingFulfillmentDetails;
 
-class ShippingFulfillmentDetailsTest extends \PHPUnit_Framework_TestCase
+class ShippingFulfillmentDetailsTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ShippingFulfillmentDetails();
     }
 

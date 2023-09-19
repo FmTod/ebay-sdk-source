@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\ProductMetadata\Types;
 
 use DTS\eBaySDK\ProductMetadata\Types\GroupProperties;
 
-class GroupPropertiesTest extends \PHPUnit_Framework_TestCase
+class GroupPropertiesTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new GroupProperties();
     }
 

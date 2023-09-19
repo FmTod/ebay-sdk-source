@@ -3,7 +3,7 @@ namespace DTS\eBaySDK\Constants\Test;
 
 use DTS\eBaySDK\Constants\GlobalIds as GlobalIds;
 
-class GlobalIdsTest extends \PHPUnit_Framework_TestCase
+class GlobalIdsTest extends \PHPUnit\Framework\TestCase
 {
     public function testConstantsAreCorrectType()
     {

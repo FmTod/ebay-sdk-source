@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\DiscountProfileType;
 
-class DiscountProfileTypeTest extends \PHPUnit_Framework_TestCase
+class DiscountProfileTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new DiscountProfileType();
     }
 

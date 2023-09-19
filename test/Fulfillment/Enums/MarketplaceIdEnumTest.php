@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Fulfillment\Enums;
 
 use DTS\eBaySDK\Fulfillment\Enums\MarketplaceIdEnum;
 
-class MarketplaceIdEnumTest extends \PHPUnit_Framework_TestCase
+class MarketplaceIdEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new MarketplaceIdEnum();
     }
 

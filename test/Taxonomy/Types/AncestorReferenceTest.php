@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Taxonomy\Types;
 
 use DTS\eBaySDK\Taxonomy\Types\AncestorReference;
 
-class AncestorReferenceTest extends \PHPUnit_Framework_TestCase
+class AncestorReferenceTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new AncestorReference();
     }
 

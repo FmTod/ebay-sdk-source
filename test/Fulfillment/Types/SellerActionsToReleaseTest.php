@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Fulfillment\Types;
 
 use DTS\eBaySDK\Fulfillment\Types\SellerActionsToRelease;
 
-class SellerActionsToReleaseTest extends \PHPUnit_Framework_TestCase
+class SellerActionsToReleaseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new SellerActionsToRelease();
     }
 

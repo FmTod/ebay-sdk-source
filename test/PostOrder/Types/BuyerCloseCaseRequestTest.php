@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\BuyerCloseCaseRequest;
 
-class BuyerCloseCaseRequestTest extends \PHPUnit_Framework_TestCase
+class BuyerCloseCaseRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new BuyerCloseCaseRequest();
     }
 

@@ -5,7 +5,7 @@ use DTS\eBaySDK\Test\TestTraits\ManageEnv;
 use DTS\eBaySDK\Credentials\CredentialsProvider;
 use DTS\eBaySDK\Credentials\Credentials;
 
-class CredentialsProvideerTest extends \PHPUnit_Framework_TestCase
+class CredentialsProvideerTest extends \PHPUnit\Framework\TestCase
 {
     use ManageEnv;
 

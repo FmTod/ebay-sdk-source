@@ -3,12 +3,14 @@ namespace DTS\eBaySDK\Types\Test;
 
 use DTS\eBaySDK\Types\DoubleType;
 
-class DoubleTypeTest extends \PHPUnit_Framework_TestCase
+class DoubleTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new DoubleType();
     }
 

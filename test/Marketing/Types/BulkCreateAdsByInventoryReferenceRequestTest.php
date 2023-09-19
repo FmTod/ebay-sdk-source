@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\BulkCreateAdsByInventoryReferenceRequest;
 
-class BulkCreateAdsByInventoryReferenceRequestTest extends \PHPUnit_Framework_TestCase
+class BulkCreateAdsByInventoryReferenceRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new BulkCreateAdsByInventoryReferenceRequest();
     }
 

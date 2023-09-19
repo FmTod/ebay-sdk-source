@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Types;
 
 use DTS\eBaySDK\ResolutionCaseManagement\Types\EnumerationDetailType;
 
-class EnumerationDetailTypeTest extends \PHPUnit_Framework_TestCase
+class EnumerationDetailTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new EnumerationDetailType();
     }
 

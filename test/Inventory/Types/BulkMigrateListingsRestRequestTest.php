@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Inventory\Types;
 
 use DTS\eBaySDK\Inventory\Types\BulkMigrateListingsRestRequest;
 
-class BulkMigrateListingsRestRequestTest extends \PHPUnit_Framework_TestCase
+class BulkMigrateListingsRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new BulkMigrateListingsRestRequest();
     }
 

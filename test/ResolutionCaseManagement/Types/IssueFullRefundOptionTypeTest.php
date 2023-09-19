@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Types;
 
 use DTS\eBaySDK\ResolutionCaseManagement\Types\IssueFullRefundOptionType;
 
-class IssueFullRefundOptionTypeTest extends \PHPUnit_Framework_TestCase
+class IssueFullRefundOptionTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new IssueFullRefundOptionType();
     }
 

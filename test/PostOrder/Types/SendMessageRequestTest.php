@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\SendMessageRequest;
 
-class SendMessageRequestTest extends \PHPUnit_Framework_TestCase
+class SendMessageRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new SendMessageRequest();
     }
 

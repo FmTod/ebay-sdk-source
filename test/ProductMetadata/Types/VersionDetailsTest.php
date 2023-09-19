@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\ProductMetadata\Types;
 
 use DTS\eBaySDK\ProductMetadata\Types\VersionDetails;
 
-class VersionDetailsTest extends \PHPUnit_Framework_TestCase
+class VersionDetailsTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new VersionDetails();
     }
 

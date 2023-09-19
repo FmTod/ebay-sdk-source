@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Shopping\Enums;
 
 use DTS\eBaySDK\Shopping\Enums\HalfItemConditionCodeType;
 
-class HalfItemConditionCodeTypeTest extends \PHPUnit_Framework_TestCase
+class HalfItemConditionCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new HalfItemConditionCodeType();
     }
 

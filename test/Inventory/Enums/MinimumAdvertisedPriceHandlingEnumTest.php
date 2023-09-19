@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Inventory\Enums;
 
 use DTS\eBaySDK\Inventory\Enums\MinimumAdvertisedPriceHandlingEnum;
 
-class MinimumAdvertisedPriceHandlingEnumTest extends \PHPUnit_Framework_TestCase
+class MinimumAdvertisedPriceHandlingEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new MinimumAdvertisedPriceHandlingEnum();
     }
 

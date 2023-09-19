@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\RuleActionInputType;
 
-class RuleActionInputTypeTest extends \PHPUnit_Framework_TestCase
+class RuleActionInputTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new RuleActionInputType();
     }
 

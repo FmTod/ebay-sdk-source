@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Product\Types;
 
 use DTS\eBaySDK\Product\Types\CompatibilitySort;
 
-class CompatibilitySortTest extends \PHPUnit_Framework_TestCase
+class CompatibilitySortTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new CompatibilitySort();
     }
 

@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\BulkCreateAdsByListingIDRestRequest;
 
-class BulkCreateAdsByListingIDRestRequestTest extends \PHPUnit_Framework_TestCase
+class BulkCreateAdsByListingIDRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new BulkCreateAdsByListingIDRestRequest();
     }
 

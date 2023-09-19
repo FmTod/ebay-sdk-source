@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Order\Enums;
 
 use DTS\eBaySDK\Order\Enums\PurchaseOrderPaymentStatusEnum;
 
-class PurchaseOrderPaymentStatusEnumTest extends \PHPUnit_Framework_TestCase
+class PurchaseOrderPaymentStatusEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new PurchaseOrderPaymentStatusEnum();
     }
 

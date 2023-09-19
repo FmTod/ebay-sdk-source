@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\MerchantData\Enums;
 
 use DTS\eBaySDK\MerchantData\Enums\RefundLineTypeCodeType;
 
-class RefundLineTypeCodeTypeTest extends \PHPUnit_Framework_TestCase
+class RefundLineTypeCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new RefundLineTypeCodeType();
     }
 

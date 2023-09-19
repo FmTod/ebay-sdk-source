@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\ShippingCostPaidByDetailsType;
 
-class ShippingCostPaidByDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class ShippingCostPaidByDetailsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ShippingCostPaidByDetailsType();
     }
 

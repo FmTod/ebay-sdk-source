@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Catalog\Types;
 
 use DTS\eBaySDK\Catalog\Types\ProductSummary;
 
-class ProductSummaryTest extends \PHPUnit_Framework_TestCase
+class ProductSummaryTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ProductSummary();
     }
 

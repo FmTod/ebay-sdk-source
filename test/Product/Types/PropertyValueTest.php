@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Product\Types;
 
 use DTS\eBaySDK\Product\Types\PropertyValue;
 
-class PropertyValueTest extends \PHPUnit_Framework_TestCase
+class PropertyValueTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new PropertyValue();
     }
 

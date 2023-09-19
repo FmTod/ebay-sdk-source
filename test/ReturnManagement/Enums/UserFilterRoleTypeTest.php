@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\ReturnManagement\Enums;
 
 use DTS\eBaySDK\ReturnManagement\Enums\UserFilterRoleType;
 
-class UserFilterRoleTypeTest extends \PHPUnit_Framework_TestCase
+class UserFilterRoleTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new UserFilterRoleType();
     }
 

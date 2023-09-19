@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Marketing\Enums;
 
 use DTS\eBaySDK\Marketing\Enums\CategoryScopeEnum;
 
-class CategoryScopeEnumTest extends \PHPUnit_Framework_TestCase
+class CategoryScopeEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new CategoryScopeEnum();
     }
 

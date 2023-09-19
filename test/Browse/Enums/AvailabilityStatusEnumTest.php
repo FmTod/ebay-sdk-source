@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Browse\Enums;
 
 use DTS\eBaySDK\Browse\Enums\AvailabilityStatusEnum;
 
-class AvailabilityStatusEnumTest extends \PHPUnit_Framework_TestCase
+class AvailabilityStatusEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new AvailabilityStatusEnum();
     }
 

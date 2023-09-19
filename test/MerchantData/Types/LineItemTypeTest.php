@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\MerchantData\Types;
 
 use DTS\eBaySDK\MerchantData\Types\LineItemType;
 
-class LineItemTypeTest extends \PHPUnit_Framework_TestCase
+class LineItemTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new LineItemType();
     }
 

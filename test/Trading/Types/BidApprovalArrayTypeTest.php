@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\BidApprovalArrayType;
 
-class BidApprovalArrayTypeTest extends \PHPUnit_Framework_TestCase
+class BidApprovalArrayTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new BidApprovalArrayType();
     }
 

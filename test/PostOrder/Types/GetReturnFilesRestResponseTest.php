@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\GetReturnFilesRestResponse;
 
-class GetReturnFilesRestResponseTest extends \PHPUnit_Framework_TestCase
+class GetReturnFilesRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new GetReturnFilesRestResponse();
     }
 

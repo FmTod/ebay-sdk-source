@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Analytics\Types;
 
 use DTS\eBaySDK\Analytics\Types\Record;
 
-class RecordTest extends \PHPUnit_Framework_TestCase
+class RecordTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new Record();
     }
 

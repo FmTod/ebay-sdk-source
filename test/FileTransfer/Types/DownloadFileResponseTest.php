@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\FileTransfer\Types;
 
 use DTS\eBaySDK\FileTransfer\Types\DownloadFileResponse;
 
-class DownloadFileResponseTest extends \PHPUnit_Framework_TestCase
+class DownloadFileResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new DownloadFileResponse();
     }
 

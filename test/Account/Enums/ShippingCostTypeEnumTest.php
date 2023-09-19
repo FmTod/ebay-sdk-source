@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Account\Enums;
 
 use DTS\eBaySDK\Account\Enums\ShippingCostTypeEnum;
 
-class ShippingCostTypeEnumTest extends \PHPUnit_Framework_TestCase
+class ShippingCostTypeEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ShippingCostTypeEnum();
     }
 

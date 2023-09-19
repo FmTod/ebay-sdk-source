@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Merchandising\Types;
 
 use DTS\eBaySDK\Merchandising\Types\GetVersionResponse;
 
-class GetVersionResponseTest extends \PHPUnit_Framework_TestCase
+class GetVersionResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new GetVersionResponse();
     }
 

@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Enums;
 
 use DTS\eBaySDK\ResolutionCaseManagement\Enums\ProofType;
 
-class ProofTypeTest extends \PHPUnit_Framework_TestCase
+class ProofTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ProofType();
     }
 

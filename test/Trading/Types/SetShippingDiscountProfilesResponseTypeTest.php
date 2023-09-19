@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\SetShippingDiscountProfilesResponseType;
 
-class SetShippingDiscountProfilesResponseTypeTest extends \PHPUnit_Framework_TestCase
+class SetShippingDiscountProfilesResponseTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new SetShippingDiscountProfilesResponseType();
     }
 

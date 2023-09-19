@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Inventory\Types;
 
 use DTS\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemGroupRestResponse;
 
-class CreateOrReplaceInventoryItemGroupRestResponseTest extends \PHPUnit_Framework_TestCase
+class CreateOrReplaceInventoryItemGroupRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new CreateOrReplaceInventoryItemGroupRestResponse();
     }
 

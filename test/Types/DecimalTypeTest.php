@@ -3,12 +3,14 @@ namespace DTS\eBaySDK\Types\Test;
 
 use DTS\eBaySDK\Types\DecimalType;
 
-class DecimalTypeTest extends \PHPUnit_Framework_TestCase
+class DecimalTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new DecimalType();
     }
 

@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\DisputeStateCodeType;
 
-class DisputeStateCodeTypeTest extends \PHPUnit_Framework_TestCase
+class DisputeStateCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new DisputeStateCodeType();
     }
 

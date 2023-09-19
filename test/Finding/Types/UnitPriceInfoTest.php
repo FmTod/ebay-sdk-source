@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Finding\Types;
 
 use DTS\eBaySDK\Finding\Types\UnitPriceInfo;
 
-class UnitPriceInfoTest extends \PHPUnit_Framework_TestCase
+class UnitPriceInfoTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new UnitPriceInfo();
     }
 

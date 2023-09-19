@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\HalfFinding\Types;
 
 use DTS\eBaySDK\HalfFinding\Types\FindItemsRequest;
 
-class FindItemsRequestTest extends \PHPUnit_Framework_TestCase
+class FindItemsRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new FindItemsRequest();
     }
 

@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\Ads;
 
-class AdsTest extends \PHPUnit_Framework_TestCase
+class AdsTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new Ads();
     }
 

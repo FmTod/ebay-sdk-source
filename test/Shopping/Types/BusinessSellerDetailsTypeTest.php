@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\BusinessSellerDetailsType;
 
-class BusinessSellerDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class BusinessSellerDetailsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new BusinessSellerDetailsType();
     }
 

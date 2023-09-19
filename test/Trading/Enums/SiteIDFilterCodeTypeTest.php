@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\SiteIDFilterCodeType;
 
-class SiteIDFilterCodeTypeTest extends \PHPUnit_Framework_TestCase
+class SiteIDFilterCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new SiteIDFilterCodeType();
     }
 

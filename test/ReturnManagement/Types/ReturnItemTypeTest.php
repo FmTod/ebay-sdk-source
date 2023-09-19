@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\ReturnManagement\Types;
 
 use DTS\eBaySDK\ReturnManagement\Types\ReturnItemType;
 
-class ReturnItemTypeTest extends \PHPUnit_Framework_TestCase
+class ReturnItemTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ReturnItemType();
     }
 

@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Finding\Types;
 
 use DTS\eBaySDK\Finding\Types\FindItemsAdvancedResponse;
 
-class FindItemsAdvancedResponseTest extends \PHPUnit_Framework_TestCase
+class FindItemsAdvancedResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new FindItemsAdvancedResponse();
     }
 

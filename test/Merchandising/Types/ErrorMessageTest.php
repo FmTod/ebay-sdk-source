@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Merchandising\Types;
 
 use DTS\eBaySDK\Merchandising\Types\ErrorMessage;
 
-class ErrorMessageTest extends \PHPUnit_Framework_TestCase
+class ErrorMessageTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ErrorMessage();
     }
 

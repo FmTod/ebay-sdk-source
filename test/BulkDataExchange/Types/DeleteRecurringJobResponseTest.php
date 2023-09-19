@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\BulkDataExchange\Types;
 
 use DTS\eBaySDK\BulkDataExchange\Types\DeleteRecurringJobResponse;
 
-class DeleteRecurringJobResponseTest extends \PHPUnit_Framework_TestCase
+class DeleteRecurringJobResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new DeleteRecurringJobResponse();
     }
 

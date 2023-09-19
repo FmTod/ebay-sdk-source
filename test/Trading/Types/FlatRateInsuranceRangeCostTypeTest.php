@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\FlatRateInsuranceRangeCostType;
 
-class FlatRateInsuranceRangeCostTypeTest extends \PHPUnit_Framework_TestCase
+class FlatRateInsuranceRangeCostTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new FlatRateInsuranceRangeCostType();
     }
 

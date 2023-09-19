@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Fulfillment\Types;
 
 use DTS\eBaySDK\Fulfillment\Types\PhoneNumber;
 
-class PhoneNumberTest extends \PHPUnit_Framework_TestCase
+class PhoneNumberTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new PhoneNumber();
     }
 

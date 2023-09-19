@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Account\Enums;
 
 use DTS\eBaySDK\Account\Enums\CurrencyCodeEnum;
 
-class CurrencyCodeEnumTest extends \PHPUnit_Framework_TestCase
+class CurrencyCodeEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new CurrencyCodeEnum();
     }
 

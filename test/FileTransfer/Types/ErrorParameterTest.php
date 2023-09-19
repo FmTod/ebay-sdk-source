@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\FileTransfer\Types;
 
 use DTS\eBaySDK\FileTransfer\Types\ErrorParameter;
 
-class ErrorParameterTest extends \PHPUnit_Framework_TestCase
+class ErrorParameterTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ErrorParameter();
     }
 

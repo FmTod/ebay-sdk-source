@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\ReturnCreationInfoType;
 
-class ReturnCreationInfoTypeTest extends \PHPUnit_Framework_TestCase
+class ReturnCreationInfoTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ReturnCreationInfoType();
     }
 

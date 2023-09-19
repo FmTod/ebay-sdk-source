@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\ModifyNameArrayType;
 
-class ModifyNameArrayTypeTest extends \PHPUnit_Framework_TestCase
+class ModifyNameArrayTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ModifyNameArrayType();
     }
 

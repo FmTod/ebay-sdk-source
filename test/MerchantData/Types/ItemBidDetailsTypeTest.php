@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\MerchantData\Types;
 
 use DTS\eBaySDK\MerchantData\Types\ItemBidDetailsType;
 
-class ItemBidDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class ItemBidDetailsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ItemBidDetailsType();
     }
 

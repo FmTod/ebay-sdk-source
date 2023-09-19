@@ -3,12 +3,14 @@ namespace DTS\eBaySDK\Types\Test;
 
 use DTS\eBaySDK\Types\URIType;
 
-class URITypeTest extends \PHPUnit_Framework_TestCase
+class URITypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new URIType();
     }
 

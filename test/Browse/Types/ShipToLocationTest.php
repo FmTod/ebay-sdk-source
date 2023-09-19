@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Browse\Types;
 
 use DTS\eBaySDK\Browse\Types\ShipToLocation;
 
-class ShipToLocationTest extends \PHPUnit_Framework_TestCase
+class ShipToLocationTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ShipToLocation();
     }
 

@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleRequestType;
 
-class SetSellingManagerTemplateAutomationRuleRequestTypeTest extends \PHPUnit_Framework_TestCase
+class SetSellingManagerTemplateAutomationRuleRequestTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new SetSellingManagerTemplateAutomationRuleRequestType();
     }
 

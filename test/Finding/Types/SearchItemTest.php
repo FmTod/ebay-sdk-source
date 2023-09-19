@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Finding\Types;
 
 use DTS\eBaySDK\Finding\Types\SearchItem;
 
-class SearchItemTest extends \PHPUnit_Framework_TestCase
+class SearchItemTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new SearchItem();
     }
 

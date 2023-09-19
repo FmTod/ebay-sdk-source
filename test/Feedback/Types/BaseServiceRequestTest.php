@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Feedback\Types;
 
 use DTS\eBaySDK\Feedback\Types\BaseServiceRequest;
 
-class BaseServiceRequestTest extends \PHPUnit_Framework_TestCase
+class BaseServiceRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new BaseServiceRequest();
     }
 

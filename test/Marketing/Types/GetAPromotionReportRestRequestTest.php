@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\GetAPromotionReportRestRequest;
 
-class GetAPromotionReportRestRequestTest extends \PHPUnit_Framework_TestCase
+class GetAPromotionReportRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new GetAPromotionReportRestRequest();
     }
 

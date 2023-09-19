@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Product\Types;
 
 use DTS\eBaySDK\Product\Types\CompatibilityPropertyFilter;
 
-class CompatibilityPropertyFilterTest extends \PHPUnit_Framework_TestCase
+class CompatibilityPropertyFilterTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new CompatibilityPropertyFilter();
     }
 

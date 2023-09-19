@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Merchandising\Types;
 
 use DTS\eBaySDK\Merchandising\Types\Amount;
 
-class AmountTest extends \PHPUnit_Framework_TestCase
+class AmountTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new Amount();
     }
 

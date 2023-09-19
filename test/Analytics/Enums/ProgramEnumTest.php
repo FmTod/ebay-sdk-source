@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Analytics\Enums;
 
 use DTS\eBaySDK\Analytics\Enums\ProgramEnum;
 
-class ProgramEnumTest extends \PHPUnit_Framework_TestCase
+class ProgramEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ProgramEnum();
     }
 

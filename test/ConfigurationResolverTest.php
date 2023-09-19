@@ -4,7 +4,7 @@ namespace DTS\eBaySDK\Test;
 use DTS\eBaySDK\ConfigurationResolver;
 use DTS\eBaySDK\Test\Mocks\StaticMethods;
 
-class ConfigurationResolverTest extends \PHPUnit_Framework_TestCase
+class ConfigurationResolverTest extends \PHPUnit\Framework\TestCase
 {
     public function testDefaults()
     {

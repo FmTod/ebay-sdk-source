@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Taxonomy\Types;
 
 use DTS\eBaySDK\Taxonomy\Types\ValueConstraint;
 
-class ValueConstraintTest extends \PHPUnit_Framework_TestCase
+class ValueConstraintTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ValueConstraint();
     }
 

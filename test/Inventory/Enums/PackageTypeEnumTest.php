@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Inventory\Enums;
 
 use DTS\eBaySDK\Inventory\Enums\PackageTypeEnum;
 
-class PackageTypeEnumTest extends \PHPUnit_Framework_TestCase
+class PackageTypeEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new PackageTypeEnum();
     }
 

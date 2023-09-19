@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\MerchantData\Types;
 
 use DTS\eBaySDK\MerchantData\Types\RefundLineType;
 
-class RefundLineTypeTest extends \PHPUnit_Framework_TestCase
+class RefundLineTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new RefundLineType();
     }
 

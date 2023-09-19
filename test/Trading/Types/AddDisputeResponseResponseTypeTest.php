@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\AddDisputeResponseResponseType;
 
-class AddDisputeResponseResponseTypeTest extends \PHPUnit_Framework_TestCase
+class AddDisputeResponseResponseTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new AddDisputeResponseResponseType();
     }
 

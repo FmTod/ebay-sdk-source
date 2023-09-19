@@ -3,7 +3,7 @@ namespace DTS\eBaySDK\Test;
 
 use DTS\eBaySDK\Debugger;
 
-class DebuggerTest extends \PHPUnit_Framework_TestCase
+class DebuggerTest extends \PHPUnit\Framework\TestCase
 {
     public function testOutputsDebugInformation()
     {

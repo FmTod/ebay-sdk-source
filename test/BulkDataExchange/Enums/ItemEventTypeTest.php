@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\BulkDataExchange\Enums;
 
 use DTS\eBaySDK\BulkDataExchange\Enums\ItemEventType;
 
-class ItemEventTypeTest extends \PHPUnit_Framework_TestCase
+class ItemEventTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ItemEventType();
     }
 

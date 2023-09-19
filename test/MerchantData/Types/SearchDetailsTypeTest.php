@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\MerchantData\Types;
 
 use DTS\eBaySDK\MerchantData\Types\SearchDetailsType;
 
-class SearchDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class SearchDetailsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new SearchDetailsType();
     }
 

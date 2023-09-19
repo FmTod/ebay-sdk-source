@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Taxonomy\Types;
 
 use DTS\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestResponse;
 
-class GetACategorySubtreeRestResponseTest extends \PHPUnit_Framework_TestCase
+class GetACategorySubtreeRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new GetACategorySubtreeRestResponse();
     }
 

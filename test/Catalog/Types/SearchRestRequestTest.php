@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Catalog\Types;
 
 use DTS\eBaySDK\Catalog\Types\SearchRestRequest;
 
-class SearchRestRequestTest extends \PHPUnit_Framework_TestCase
+class SearchRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new SearchRestRequest();
     }
 

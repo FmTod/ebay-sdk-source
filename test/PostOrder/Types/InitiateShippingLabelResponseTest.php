@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\InitiateShippingLabelResponse;
 
-class InitiateShippingLabelResponseTest extends \PHPUnit_Framework_TestCase
+class InitiateShippingLabelResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new InitiateShippingLabelResponse();
     }
 

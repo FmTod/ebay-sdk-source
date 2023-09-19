@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\BusinessPoliciesManagement\Types;
 
 use DTS\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyProfileList;
 
-class ShippingPolicyProfileListTest extends \PHPUnit_Framework_TestCase
+class ShippingPolicyProfileListTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ShippingPolicyProfileList();
     }
 

@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\MerchantData\Types;
 
 use DTS\eBaySDK\MerchantData\Types\LookupAttributeArrayType;
 
-class LookupAttributeArrayTypeTest extends \PHPUnit_Framework_TestCase
+class LookupAttributeArrayTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new LookupAttributeArrayType();
     }
 

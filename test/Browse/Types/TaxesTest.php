@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Browse\Types;
 
 use DTS\eBaySDK\Browse\Types\Taxes;
 
-class TaxesTest extends \PHPUnit_Framework_TestCase
+class TaxesTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new Taxes();
     }
 

@@ -7,7 +7,7 @@ use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 
-class HttpHandlerTest extends \PHPUnit_Framework_TestCase
+class HttpHandlerTest extends \PHPUnit\Framework\TestCase
 {
     public function testWorksWithSuccessfulRequest()
     {

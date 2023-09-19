@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Browse\Types;
 
 use DTS\eBaySDK\Browse\Types\ItemLocationImpl;
 
-class ItemLocationImplTest extends \PHPUnit_Framework_TestCase
+class ItemLocationImplTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ItemLocationImpl();
     }
 

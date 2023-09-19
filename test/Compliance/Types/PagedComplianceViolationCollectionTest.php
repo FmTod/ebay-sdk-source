@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Compliance\Types;
 
 use DTS\eBaySDK\Compliance\Types\PagedComplianceViolationCollection;
 
-class PagedComplianceViolationCollectionTest extends \PHPUnit_Framework_TestCase
+class PagedComplianceViolationCollectionTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new PagedComplianceViolationCollection();
     }
 

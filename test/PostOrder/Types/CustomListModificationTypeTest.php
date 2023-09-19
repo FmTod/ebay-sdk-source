@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\CustomListModificationType;
 
-class CustomListModificationTypeTest extends \PHPUnit_Framework_TestCase
+class CustomListModificationTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new CustomListModificationType();
     }
 

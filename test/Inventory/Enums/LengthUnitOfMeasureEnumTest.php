@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Inventory\Enums;
 
 use DTS\eBaySDK\Inventory\Enums\LengthUnitOfMeasureEnum;
 
-class LengthUnitOfMeasureEnumTest extends \PHPUnit_Framework_TestCase
+class LengthUnitOfMeasureEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new LengthUnitOfMeasureEnum();
     }
 

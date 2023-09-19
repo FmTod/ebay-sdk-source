@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\SellerContactDetailsEnabledDefinitionType;
 
-class SellerContactDetailsEnabledDefinitionTypeTest extends \PHPUnit_Framework_TestCase
+class SellerContactDetailsEnabledDefinitionTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new SellerContactDetailsEnabledDefinitionType();
     }
 

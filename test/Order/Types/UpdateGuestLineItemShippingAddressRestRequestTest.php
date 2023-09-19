@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Order\Types;
 
 use DTS\eBaySDK\Order\Types\UpdateGuestLineItemShippingAddressRestRequest;
 
-class UpdateGuestLineItemShippingAddressRestRequestTest extends \PHPUnit_Framework_TestCase
+class UpdateGuestLineItemShippingAddressRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new UpdateGuestLineItemShippingAddressRestRequest();
     }
 

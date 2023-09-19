@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\FeedbackDetailType;
 
-class FeedbackDetailTypeTest extends \PHPUnit_Framework_TestCase
+class FeedbackDetailTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new FeedbackDetailType();
     }
 

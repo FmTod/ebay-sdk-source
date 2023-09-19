@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\Base64BinaryType;
 
-class Base64BinaryTypeTest extends \PHPUnit_Framework_TestCase
+class Base64BinaryTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new Base64BinaryType();
     }
 

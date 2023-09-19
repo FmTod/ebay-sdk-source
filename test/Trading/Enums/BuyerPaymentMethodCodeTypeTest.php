@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\BuyerPaymentMethodCodeType;
 
-class BuyerPaymentMethodCodeTypeTest extends \PHPUnit_Framework_TestCase
+class BuyerPaymentMethodCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new BuyerPaymentMethodCodeType();
     }
 

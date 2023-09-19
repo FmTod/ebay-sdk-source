@@ -7,7 +7,7 @@ use DTS\eBaySDK\Test\Mocks\HttpOAuthHandler;
 use DTS\eBaySDK\Credentials\Credentials;
 use DTS\eBaySDK\Credentials\CredentialsProvider;
 
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends \PHPUnit\Framework\TestCase
 {
     use ManageEnv;
 

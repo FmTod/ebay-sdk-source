@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Shopping\Enums;
 
 use DTS\eBaySDK\Shopping\Enums\FeedbackRatingDetailCodeType;
 
-class FeedbackRatingDetailCodeTypeTest extends \PHPUnit_Framework_TestCase
+class FeedbackRatingDetailCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new FeedbackRatingDetailCodeType();
     }
 

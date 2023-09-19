@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Finding\Types;
 
 use DTS\eBaySDK\Finding\Types\AspectValueHistogram;
 
-class AspectValueHistogramTest extends \PHPUnit_Framework_TestCase
+class AspectValueHistogramTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new AspectValueHistogram();
     }
 

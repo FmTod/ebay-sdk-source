@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\SocialAddressTypeCodeType;
 
-class SocialAddressTypeCodeTypeTest extends \PHPUnit_Framework_TestCase
+class SocialAddressTypeCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new SocialAddressTypeCodeType();
     }
 

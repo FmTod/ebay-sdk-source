@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\GetSpecificReportTaskRestRequest;
 
-class GetSpecificReportTaskRestRequestTest extends \PHPUnit_Framework_TestCase
+class GetSpecificReportTaskRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new GetSpecificReportTaskRestRequest();
     }
 

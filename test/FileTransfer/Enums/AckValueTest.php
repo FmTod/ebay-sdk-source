@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\FileTransfer\Enums;
 
 use DTS\eBaySDK\FileTransfer\Enums\AckValue;
 
-class AckValueTest extends \PHPUnit_Framework_TestCase
+class AckValueTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new AckValue();
     }
 

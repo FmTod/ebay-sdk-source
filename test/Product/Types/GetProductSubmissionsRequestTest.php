@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Product\Types;
 
 use DTS\eBaySDK\Product\Types\GetProductSubmissionsRequest;
 
-class GetProductSubmissionsRequestTest extends \PHPUnit_Framework_TestCase
+class GetProductSubmissionsRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new GetProductSubmissionsRequest();
     }
 

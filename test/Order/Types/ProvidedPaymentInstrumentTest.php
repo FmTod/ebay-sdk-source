@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Order\Types;
 
 use DTS\eBaySDK\Order\Types\ProvidedPaymentInstrument;
 
-class ProvidedPaymentInstrumentTest extends \PHPUnit_Framework_TestCase
+class ProvidedPaymentInstrumentTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ProvidedPaymentInstrument();
     }
 

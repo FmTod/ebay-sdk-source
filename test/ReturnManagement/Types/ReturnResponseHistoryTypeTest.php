@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\ReturnManagement\Types;
 
 use DTS\eBaySDK\ReturnManagement\Types\ReturnResponseHistoryType;
 
-class ReturnResponseHistoryTypeTest extends \PHPUnit_Framework_TestCase
+class ReturnResponseHistoryTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ReturnResponseHistoryType();
     }
 

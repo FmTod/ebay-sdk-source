@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\WantItNowPostType;
 
-class WantItNowPostTypeTest extends \PHPUnit_Framework_TestCase
+class WantItNowPostTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new WantItNowPostType();
     }
 

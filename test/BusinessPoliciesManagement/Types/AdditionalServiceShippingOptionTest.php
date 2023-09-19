@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\BusinessPoliciesManagement\Types;
 
 use DTS\eBaySDK\BusinessPoliciesManagement\Types\AdditionalServiceShippingOption;
 
-class AdditionalServiceShippingOptionTest extends \PHPUnit_Framework_TestCase
+class AdditionalServiceShippingOptionTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new AdditionalServiceShippingOption();
     }
 

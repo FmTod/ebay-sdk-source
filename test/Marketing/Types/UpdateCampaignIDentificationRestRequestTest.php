@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\UpdateCampaignIDentificationRestRequest;
 
-class UpdateCampaignIDentificationRestRequestTest extends \PHPUnit_Framework_TestCase
+class UpdateCampaignIDentificationRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new UpdateCampaignIDentificationRestRequest();
     }
 

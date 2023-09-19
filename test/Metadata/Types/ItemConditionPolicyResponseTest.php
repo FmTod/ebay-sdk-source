@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Metadata\Types;
 
 use DTS\eBaySDK\Metadata\Types\ItemConditionPolicyResponse;
 
-class ItemConditionPolicyResponseTest extends \PHPUnit_Framework_TestCase
+class ItemConditionPolicyResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ItemConditionPolicyResponse();
     }
 

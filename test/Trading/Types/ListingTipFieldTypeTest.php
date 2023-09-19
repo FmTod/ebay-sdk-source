@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\ListingTipFieldType;
 
-class ListingTipFieldTypeTest extends \PHPUnit_Framework_TestCase
+class ListingTipFieldTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ListingTipFieldType();
     }
 

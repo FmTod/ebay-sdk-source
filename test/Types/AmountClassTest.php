@@ -3,12 +3,14 @@ namespace DTS\eBaySDK\Types\Test;
 
 use DTS\eBaySDK\Test\Mocks\AmountClass;
 
-class AmountClassTest extends \PHPUnit_Framework_TestCase
+class AmountClassTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new AmountClass();
     }
 

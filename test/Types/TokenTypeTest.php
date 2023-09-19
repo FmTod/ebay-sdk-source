@@ -3,12 +3,14 @@ namespace DTS\eBaySDK\Types\Test;
 
 use DTS\eBaySDK\Types\TokenType;
 
-class TokenTypeTest extends \PHPUnit_Framework_TestCase
+class TokenTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new TokenType();
     }
 

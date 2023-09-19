@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Inventory\Types;
 
 use DTS\eBaySDK\Inventory\Types\BulkPriceQuantityResponse;
 
-class BulkPriceQuantityResponseTest extends \PHPUnit_Framework_TestCase
+class BulkPriceQuantityResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new BulkPriceQuantityResponse();
     }
 

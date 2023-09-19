@@ -5,7 +5,7 @@ use DTS\eBaySDK\Test\Mocks\AmountClass;
 use DTS\eBaySDK\Test\Mocks\ComplexClass;
 use DTS\eBaySDK\Test\Mocks\SimpleClass;
 
-class ConstructTest extends \PHPUnit_Framework_TestCase
+class ConstructTest extends \PHPUnit\Framework\TestCase
 {
     public function testSettingPropertiesViaCtor()
     {

@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Inventory\Types;
 
 use DTS\eBaySDK\Inventory\Types\EnableInventoryLocationRestResponse;
 
-class EnableInventoryLocationRestResponseTest extends \PHPUnit_Framework_TestCase
+class EnableInventoryLocationRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new EnableInventoryLocationRestResponse();
     }
 

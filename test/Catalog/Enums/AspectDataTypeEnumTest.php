@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Catalog\Enums;
 
 use DTS\eBaySDK\Catalog\Enums\AspectDataTypeEnum;
 
-class AspectDataTypeEnumTest extends \PHPUnit_Framework_TestCase
+class AspectDataTypeEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new AspectDataTypeEnum();
     }
 

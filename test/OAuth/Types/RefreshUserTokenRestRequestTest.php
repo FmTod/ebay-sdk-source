@@ -3,12 +3,14 @@ namespace DTS\eBaySDK\Test\OAuth\Types;
 
 use DTS\eBaySDK\OAuth\Types\RefreshUserTokenRestRequest;
 
-class RefreshUserTokenRestRequestTest extends \PHPUnit_Framework_TestCase
+class RefreshUserTokenRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new RefreshUserTokenRestRequest();
     }
 

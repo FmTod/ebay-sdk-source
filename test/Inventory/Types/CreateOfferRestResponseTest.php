@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Inventory\Types;
 
 use DTS\eBaySDK\Inventory\Types\CreateOfferRestResponse;
 
-class CreateOfferRestResponseTest extends \PHPUnit_Framework_TestCase
+class CreateOfferRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new CreateOfferRestResponse();
     }
 

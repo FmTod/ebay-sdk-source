@@ -13,12 +13,14 @@ use DTS\eBaySDK\Test\Mocks\StringType;
 use DTS\eBaySDK\Test\Mocks\TokenType;
 use DTS\eBaySDK\Test\Mocks\URIType;
 
-class ToArrayTest extends \PHPUnit_Framework_TestCase
+class ToArrayTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ComplexClass();
     }
 

@@ -9,7 +9,7 @@ use DTS\eBaySDK\Test\Mocks\Service;
 use DTS\eBaySDK\Test\Mocks\ComplexClass;
 use DTS\eBaySDK\Test\Mocks\HttpHandler;
 
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends \PHPUnit\Framework\TestCase
 {
     use ManageEnv;
 

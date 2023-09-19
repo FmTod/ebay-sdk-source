@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\TopRatedProgramCodeType;
 
-class TopRatedProgramCodeTypeTest extends \PHPUnit_Framework_TestCase
+class TopRatedProgramCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new TopRatedProgramCodeType();
     }
 

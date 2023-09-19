@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\BusinessPoliciesManagement\Types;
 
 use DTS\eBaySDK\BusinessPoliciesManagement\Types\ServiceDefinition;
 
-class ServiceDefinitionTest extends \PHPUnit_Framework_TestCase
+class ServiceDefinitionTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ServiceDefinition();
     }
 

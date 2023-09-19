@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\PostOrder\Enums;
 
 use DTS\eBaySDK\PostOrder\Enums\ReturnCountFilterEnum;
 
-class ReturnCountFilterEnumTest extends \PHPUnit_Framework_TestCase
+class ReturnCountFilterEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ReturnCountFilterEnum();
     }
 

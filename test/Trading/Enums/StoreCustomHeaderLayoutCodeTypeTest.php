@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\StoreCustomHeaderLayoutCodeType;
 
-class StoreCustomHeaderLayoutCodeTypeTest extends \PHPUnit_Framework_TestCase
+class StoreCustomHeaderLayoutCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new StoreCustomHeaderLayoutCodeType();
     }
 

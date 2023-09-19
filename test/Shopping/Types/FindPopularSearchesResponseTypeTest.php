@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\FindPopularSearchesResponseType;
 
-class FindPopularSearchesResponseTypeTest extends \PHPUnit_Framework_TestCase
+class FindPopularSearchesResponseTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new FindPopularSearchesResponseType();
     }
 

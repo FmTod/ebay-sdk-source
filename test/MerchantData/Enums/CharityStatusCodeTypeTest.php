@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\MerchantData\Enums;
 
 use DTS\eBaySDK\MerchantData\Enums\CharityStatusCodeType;
 
-class CharityStatusCodeTypeTest extends \PHPUnit_Framework_TestCase
+class CharityStatusCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new CharityStatusCodeType();
     }
 

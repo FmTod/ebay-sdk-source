@@ -3,7 +3,7 @@ namespace DTS\eBaySDK\Constants\Test;
 
 use DTS\eBaySDK\Constants\SiteIds as SiteIds;
 
-class SiteIdsTest extends \PHPUnit_Framework_TestCase
+class SiteIdsTest extends \PHPUnit\Framework\TestCase
 {
     public function testConstantsAreCorrectType()
     {

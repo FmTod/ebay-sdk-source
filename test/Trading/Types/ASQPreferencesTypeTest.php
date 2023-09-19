@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\ASQPreferencesType;
 
-class ASQPreferencesTypeTest extends \PHPUnit_Framework_TestCase
+class ASQPreferencesTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ASQPreferencesType();
     }
 

@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Feedback\Enums;
 
 use DTS\eBaySDK\Feedback\Enums\ErrorCategory;
 
-class ErrorCategoryTest extends \PHPUnit_Framework_TestCase
+class ErrorCategoryTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ErrorCategory();
     }
 

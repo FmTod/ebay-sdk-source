@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\MerchantData\Enums;
 
 use DTS\eBaySDK\MerchantData\Enums\GalleryStatusCodeType;
 
-class GalleryStatusCodeTypeTest extends \PHPUnit_Framework_TestCase
+class GalleryStatusCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new GalleryStatusCodeType();
     }
 

@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\GlobalShippingEnabledDefinitionType;
 
-class GlobalShippingEnabledDefinitionTypeTest extends \PHPUnit_Framework_TestCase
+class GlobalShippingEnabledDefinitionTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new GlobalShippingEnabledDefinitionType();
     }
 

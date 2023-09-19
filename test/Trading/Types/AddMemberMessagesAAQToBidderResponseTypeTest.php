@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\AddMemberMessagesAAQToBidderResponseType;
 
-class AddMemberMessagesAAQToBidderResponseTypeTest extends \PHPUnit_Framework_TestCase
+class AddMemberMessagesAAQToBidderResponseTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new AddMemberMessagesAAQToBidderResponseType();
     }
 

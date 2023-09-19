@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\BulkDataExchange\Types;
 
 use DTS\eBaySDK\BulkDataExchange\Types\StartDownloadJobResponse;
 
-class StartDownloadJobResponseTest extends \PHPUnit_Framework_TestCase
+class StartDownloadJobResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new StartDownloadJobResponse();
     }
 

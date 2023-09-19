@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\UpdateShipmentTrackingRestRequest;
 
-class UpdateShipmentTrackingRestRequestTest extends \PHPUnit_Framework_TestCase
+class UpdateShipmentTrackingRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new UpdateShipmentTrackingRestRequest();
     }
 

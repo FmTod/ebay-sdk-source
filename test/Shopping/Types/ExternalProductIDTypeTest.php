@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\ExternalProductIDType;
 
-class ExternalProductIDTypeTest extends \PHPUnit_Framework_TestCase
+class ExternalProductIDTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ExternalProductIDType();
     }
 

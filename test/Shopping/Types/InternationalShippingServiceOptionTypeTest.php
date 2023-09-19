@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\InternationalShippingServiceOptionType;
 
-class InternationalShippingServiceOptionTypeTest extends \PHPUnit_Framework_TestCase
+class InternationalShippingServiceOptionTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new InternationalShippingServiceOptionType();
     }
 

@@ -4,7 +4,7 @@ namespace DTS\eBaySDK\Test;
 use DTS\eBaySDK\UriResolver;
 use DTS\eBaySDK\Test\Mocks\StaticMethods;
 
-class UriResolverTest extends \PHPUnit_Framework_TestCase
+class UriResolverTest extends \PHPUnit\Framework\TestCase
 {
     public function testDefaults()
     {

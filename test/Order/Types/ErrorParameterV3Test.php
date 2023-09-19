@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Order\Types;
 
 use DTS\eBaySDK\Order\Types\ErrorParameterV3;
 
-class ErrorParameterV3Test extends \PHPUnit_Framework_TestCase
+class ErrorParameterV3Test extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ErrorParameterV3();
     }
 

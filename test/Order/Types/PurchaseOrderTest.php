@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Order\Types;
 
 use DTS\eBaySDK\Order\Types\PurchaseOrder;
 
-class PurchaseOrderTest extends \PHPUnit_Framework_TestCase
+class PurchaseOrderTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new PurchaseOrder();
     }
 

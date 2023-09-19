@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\MerchantData\Types;
 
 use DTS\eBaySDK\MerchantData\Types\PickupOptionsType;
 
-class PickupOptionsTypeTest extends \PHPUnit_Framework_TestCase
+class PickupOptionsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new PickupOptionsType();
     }
 

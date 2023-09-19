@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\BulkDataExchange\Types;
 
 use DTS\eBaySDK\BulkDataExchange\Types\BaseServiceResponse;
 
-class BaseServiceResponseTest extends \PHPUnit_Framework_TestCase
+class BaseServiceResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new BaseServiceResponse();
     }
 

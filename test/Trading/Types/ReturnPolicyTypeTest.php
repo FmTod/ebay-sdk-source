@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\ReturnPolicyType;
 
-class ReturnPolicyTypeTest extends \PHPUnit_Framework_TestCase
+class ReturnPolicyTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ReturnPolicyType();
     }
 

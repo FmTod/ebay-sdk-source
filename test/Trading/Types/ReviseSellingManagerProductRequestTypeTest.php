@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\ReviseSellingManagerProductRequestType;
 
-class ReviseSellingManagerProductRequestTypeTest extends \PHPUnit_Framework_TestCase
+class ReviseSellingManagerProductRequestTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ReviseSellingManagerProductRequestType();
     }
 

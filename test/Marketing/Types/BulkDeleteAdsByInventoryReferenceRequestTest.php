@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\BulkDeleteAdsByInventoryReferenceRequest;
 
-class BulkDeleteAdsByInventoryReferenceRequestTest extends \PHPUnit_Framework_TestCase
+class BulkDeleteAdsByInventoryReferenceRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new BulkDeleteAdsByInventoryReferenceRequest();
     }
 

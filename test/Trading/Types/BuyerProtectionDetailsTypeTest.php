@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\BuyerProtectionDetailsType;
 
-class BuyerProtectionDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class BuyerProtectionDetailsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new BuyerProtectionDetailsType();
     }
 

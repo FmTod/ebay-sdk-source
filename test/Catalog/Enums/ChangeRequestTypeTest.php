@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\Catalog\Enums;
 
 use DTS\eBaySDK\Catalog\Enums\ChangeRequestType;
 
-class ChangeRequestTypeTest extends \PHPUnit_Framework_TestCase
+class ChangeRequestTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new ChangeRequestType();
     }
 

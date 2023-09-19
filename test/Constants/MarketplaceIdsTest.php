@@ -3,7 +3,7 @@ namespace DTS\eBaySDK\Constants\Test;
 
 use DTS\eBaySDK\Constants\MarketplaceIds as MarketplaceIds;
 
-class MarketplaceIdsTest extends \PHPUnit_Framework_TestCase
+class MarketplaceIdsTest extends \PHPUnit\Framework\TestCase
 {
     public function testConstantsAreCorrectType()
     {

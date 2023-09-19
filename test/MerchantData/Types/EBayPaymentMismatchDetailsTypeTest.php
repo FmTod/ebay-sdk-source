@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\MerchantData\Types;
 
 use DTS\eBaySDK\MerchantData\Types\EBayPaymentMismatchDetailsType;
 
-class EBayPaymentMismatchDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class EBayPaymentMismatchDetailsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new EBayPaymentMismatchDetailsType();
     }
 

@@ -12,12 +12,14 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\AppealCaseDecisionRestResponse;
 
-class AppealCaseDecisionRestResponseTest extends \PHPUnit_Framework_TestCase
+class AppealCaseDecisionRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
+        parent::setUp();
+
         $this->obj = new AppealCaseDecisionRestResponse();
     }
 
