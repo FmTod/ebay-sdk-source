@@ -139,6 +139,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $eBayPlusEligible
  * @property boolean $eMailDeliveryAvailable
  * @property boolean $IsSecureDescription
+ * @property VideoDetailsType $VideoDetails
  */
 class ItemType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -907,6 +908,12 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'IsSecureDescription'
+        ],
+        'VideoDetails' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\VideoDetailsType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'VideoDetails'
         ]
     ];
 
