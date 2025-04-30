@@ -169,7 +169,7 @@ abstract class BaseService
                 list($xmlResponse, $attachment) = $this->extractXml($res->getBody()->getContents());
 
                 if ($debug !== false) {
-                    $this->debugResponse($xmlResponse);
+                    $this->debugResponse($xmlResponse, $res->getHeaders());
                 }
 
                 $xmlParser = new XmlParser($responseClass);
@@ -399,9 +399,14 @@ abstract class BaseService
      *
      * @param string $body The XML body of the response.
       */
-    private function debugResponse($body)
+    private function debugResponse($body, array $headers = [])
     {
-        $this->debug($body);
+        $headersStr = array_reduce(array_keys($headers), function ($str, $key) use ($headers) {
+            $str .= $key.': '.(is_array($headers[$key]) ? implode($headers[$key]) : $headers[$key]).PHP_EOL;
+            return $str;
+        }, '');
+
+        $this->debug($headersStr.$body);
     }
 
     /**
