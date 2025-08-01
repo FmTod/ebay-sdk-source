@@ -16,6 +16,7 @@ namespace DTS\eBaySDK\Taxonomy\Types;
  * @property boolean $aspectEnabledForVariations
  * @property string $aspectFormat
  * @property string $aspectMode
+ * @property string $aspectUsage
  * @property boolean $aspectRequired
  * @property string $itemToAspectCardinality
  */
@@ -54,6 +55,12 @@ class AspectConstraint extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'aspectRequired'
+        ],
+        'aspectUsage' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'aspectUsage'
         ],
         'itemToAspectCardinality' => [
             'type' => 'string',
