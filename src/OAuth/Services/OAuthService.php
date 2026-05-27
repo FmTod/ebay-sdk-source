@@ -330,7 +330,7 @@ class OAuthService
                 }
 
                 return new $responseClass(
-                    $json !== '' ? json_decode($json, true) : [],
+                    $json !== '' ? (json_decode($json, true) ?? []) : [],
                     $res->getStatusCode(),
                     $res->getHeaders()
                 );
