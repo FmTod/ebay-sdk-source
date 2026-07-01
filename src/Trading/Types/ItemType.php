@@ -104,6 +104,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $ItemCompatibilityCount
  * @property integer $ConditionID
  * @property string $ConditionDescription
+ * @property \DTS\eBaySDK\Trading\Types\ConditionDescriptorsType $ConditionDescriptors
  * @property string $ConditionDisplayName
  * @property string $TaxCategory
  * @property \DTS\eBaySDK\Trading\Enums\QuantityAvailableHintCodeType $QuantityAvailableHint
@@ -698,6 +699,12 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ConditionDescription'
+        ],
+        'ConditionDescriptors' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\ConditionDescriptorsType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'ConditionDescriptors'
         ],
         'ConditionDisplayName' => [
             'type' => 'string',
