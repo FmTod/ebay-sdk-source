@@ -611,6 +611,11 @@ class BaseType implements JmesPathableObjectInterface
         } elseif (is_bool($value)) {
             return $value ? 'true' : 'false';
         } else {
+            // Strip characters illegal in XML 1.0 (C0 controls except tab/LF/CR).
+            // htmlspecialchars escapes markup but lets raw control bytes through,
+            // which eBay's parser rejects ("invalid XML character was found").
+            $value = preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F]/', '', (string) $value) ?? '';
+
             return htmlspecialchars($value, ENT_QUOTES, 'UTF-8', true);
         }
     }
