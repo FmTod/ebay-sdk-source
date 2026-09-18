@@ -12,13 +12,17 @@ namespace DTS\eBaySDK\Taxonomy\Types;
 
 /**
  *
+ * @property string[] $aspectApplicableTo
  * @property string $aspectDataType
  * @property boolean $aspectEnabledForVariations
  * @property string $aspectFormat
+ * @property integer $aspectMaxLength
  * @property string $aspectMode
  * @property string $aspectUsage
  * @property boolean $aspectRequired
+ * @property string $expectedRequiredByDate
  * @property string $itemToAspectCardinality
+ * @property string $aspectAdvancedDataType
  */
 class AspectConstraint extends \DTS\eBaySDK\Types\BaseType
 {
@@ -26,6 +30,18 @@ class AspectConstraint extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
+        'aspectAdvancedDataType' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'aspectAdvancedDataType'
+        ],
+        'aspectApplicableTo' => [
+            'type' => 'string',
+            'repeatable' => true,
+            'attribute' => false,
+            'elementName' => 'aspectApplicableTo'
+        ],
         'aspectDataType' => [
             'type' => 'string',
             'repeatable' => false,
@@ -44,6 +60,12 @@ class AspectConstraint extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'aspectFormat'
         ],
+        'aspectMaxLength' => [
+            'type' => 'integer',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'aspectMaxLength'
+        ],
         'aspectMode' => [
             'type' => 'string',
             'repeatable' => false,
@@ -61,6 +83,12 @@ class AspectConstraint extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'aspectUsage'
+        ],
+        'expectedRequiredByDate' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'expectedRequiredByDate'
         ],
         'itemToAspectCardinality' => [
             'type' => 'string',
